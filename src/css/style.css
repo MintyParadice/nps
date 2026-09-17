@@ -185,3 +185,8 @@
   width: 24px;
   height: 24px;
 }
+
+svg {
+  background-color: var(--bs-black);
+  fill: white;
+}
