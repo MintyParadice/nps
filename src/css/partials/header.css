@@ -1,0 +1,105 @@
+/* Disclaimer banner */
+.disclaimer {
+  margin: 0;
+  padding: 0.75em 1em;
+  background-color: var(--bs-cape-honey);
+  color: var(--bs-grey-4);
+  font-size: 0.85rem;
+  text-align: left;
+}
+.disclaimer a {
+  color: var(--bs-chathams-blue-2);
+  text-decoration: underline;
+}
+
+/* Global navbar styling */
+
+.global-header {
+  background-color: var(--bs-black);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  fill: white;
+}
+
+.global-header a:link,
+.global-header a:visited,
+#park-header a:link,
+#park-header a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  padding: 0 1em;
+  font-weight: 700;
+}
+
+.site-title .logo {
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 16px solid var(--bs-white);
+}
+
+.global-header .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.global-header__right {
+  display: flex;
+  align-items: center;
+}
+.global-header__right .search-icon {
+  padding: 0 1rem;
+  margin-top: 6px;
+}
+.global-header__right button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 1.2em;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  border-left: 1px solid var(--bs-grey-5);
+  cursor: pointer;
+}
+
+/* Park nav styling */
+
+.park-nav > ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bs-black);
+  font-size: 0.8rem;
+}
+.park-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8em 2em;
+}
+.park-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.park-nav svg {
+  width: 24px;
+  height: 24px;
+}
+
+svg {
+  background-color: var(--bs-black);
+  fill: white;
+}

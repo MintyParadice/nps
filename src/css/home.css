@@ -1,0 +1,37 @@
+/* Main content */
+
+#main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5em 1.5em 3em;
+}
+
+.intro h1 {
+  font-family: var(--bs-font-serif);
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--bs-grey-4);
+  margin: 0 0 0.6em;
+}
+
+.intro p {
+  max-width: 68ch;
+  color: var(--bs-grey-2);
+  margin: 0;
+}
+
+/* Layout for the info cards on the home page */
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  margin-top: 2.5em;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
+}
