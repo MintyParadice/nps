@@ -1,0 +1,101 @@
+/* current conditions styles */
+
+main {
+  padding: 1rem;
+}
+
+/* alerts */
+
+.alerts > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.alert {
+  margin: 0.5rem;
+  padding: 0.5rem 0 0.8rem 0;
+  display: flex;
+  gap: 1em;
+  border-bottom: 1px solid var(--bs-grey-3);
+}
+
+.alert h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.alert p {
+  margin: 0;
+}
+
+.alert svg {
+  height: 30px;
+  width: 30px;
+  margin: 0.25em;
+  flex: 0 0 auto;
+}
+
+/* visitor styles */
+
+.visitor > details > ul {
+  list-style: none;
+  padding: 0;
+}
+.visitor > details li {
+  border-bottom: 1px solid var(--bs-grey-3);
+}
+
+.visitor-services,
+.activities {
+  margin: 2rem 0;
+}
+
+.visitor-services h2,
+.activities h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.85rem 0;
+  color: #000;
+}
+
+/* Accordion Box */
+.visitor details,
+.activities details {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  padding: 0.85rem 1.25rem;
+}
+
+/* Header / Toggle label */
+.visitor summary,
+.activities summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111;
+  list-style-position: outside;
+  outline: none;
+}
+
+/* Open state padding adjustment */
+.visitor details[open],
+.activities details[open] {
+  padding-bottom: 1.5rem;
+}
+
+/* List contents */
+.visitor details ul,
+.activities details ul {
+  list-style-type: disc;
+  margin: 1rem 0 0 1.25rem;
+  padding: 0;
+}
+
+.visitor details ul li,
+.activities details ul li {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  color: #111;
+  line-height: 1.4;
+}
