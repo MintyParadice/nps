@@ -71,3 +71,108 @@ export function visitorCenterTemplate(center) {
 export function activityListTemplate(activities) {
   return activities.map((activity) => `<li>${activity.name}</li>`).join("");
 }
+
+export function globalHeaderTemplate() {
+  return `<a href="index.html" class="site-title">
+      <span class="logo" role="presentation"></span>
+      <span>National Park Service</span>
+    </a>
+    <div class="global-header__right">
+      <a class="search-icon" href="#park-footer">
+        <svg class="icon">
+          <use xlink:href="${spritePath}#search"></use>
+        </svg>
+        <span class="visually-hidden">Search</span>
+      </a>
+      <button id="global-nav-toggle" class="global-nav__toggle" aria-expanded="false" aria-label="Open Menu">
+        <div class="global-nav__toggle--closed">
+          <svg class="icon">
+            <use xlink:href="${spritePath}#menu"></use>
+          </svg>
+          <span class="visually-hidden">Open</span> Menu
+        </div>
+        <div class="global-nav__toggle--open">
+          <svg class="icon">
+            <use xlink:href="${spritePath}#close"></use>
+          </svg>
+          Close
+        </div>
+      </button>
+    </div>
+    <nav class="global-nav">
+      <h2 class="global-nav__section-heading section-heading--green">Explore this Park</h2>
+      <ul class="global-nav__list">
+        <li>
+          <div class="global-nav__split-button">
+            <a href="#">Plan Your Visit</a>
+            <button class="global-nav__split-button__toggle">
+              <span class="visually-hidden">Toggle submenu for Plan Your Visit</span>
+              <svg class="icon" role="presentation" focusable="false">
+                <use xlink:href="${spritePath}#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="global-nav__submenu" aria-label="Plan Your Visit submenu">
+            <li><a href="#">Find a Park</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Passes</a></li>
+            <li><a href="#">Trip Ideas</a></li>
+          </ul>
+        </li>
+      </ul>
+      <h2 class="global-nav__section-heading section-heading--blue">Explore the National Park Service</h2>
+      <ul class="global-nav__list">
+        <li>
+          <div class="global-nav__split-button">
+            <a href="#">Plan Your Visit</a>
+            <button class="global-nav__split-button__toggle">
+              <span class="visually-hidden">Toggle submenu for Plan Your Visit</span>
+              <svg class="icon" role="presentation" focusable="false">
+                <use xlink:href="${spritePath}#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="global-nav__submenu" aria-label="Plan Your Visit submenu">
+            <li><a href="#">Find a Park</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Passes</a></li>
+            <li><a href="#">Trip Ideas</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="global-nav__split-button">
+            <a href="#">Learn & Explore</a>
+            <button class="global-nav__split-button__toggle">
+              <span class="visually-hidden">Toggle submenu for Learn & Explore</span>
+              <svg class="icon" role="presentation" focusable="false">
+                <use xlink:href="${spritePath}#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="global-nav__submenu" aria-label="Learn & Explore submenu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Discover History</a></li>
+            <li><a href="#">Explore Nature</a></li>
+            <li><a href="#">Kids</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="global-nav__split-button">
+            <a href="#">Get Involved</a>
+            <button class="global-nav__split-button__toggle">
+              <span class="visually-hidden">Toggle submenu for Get Involved</span>
+              <svg class="icon" role="presentation" focusable="false">
+                <use xlink:href="${spritePath}#arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="global-nav__submenu" aria-label="Get Involved submenu">
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Partner</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Work For Us</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>`;
+}

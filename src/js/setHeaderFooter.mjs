@@ -1,4 +1,7 @@
-import { parkInfoTemplate, footerTemplate } from "./templates.mjs";
+import { parkInfoTemplate, footerTemplate, globalHeaderTemplate } from "./templates.mjs";
+import enableNavigation from "./navigation.mjs";
+
+document.querySelector(".global-header").innerHTML = globalHeaderTemplate();
 
 function setHeaderInfo(data) {
   // insert data into disclaimer section
@@ -22,4 +25,5 @@ function setFooter(data) {
 export default function setHeaderFooter(parkData) {
   setHeaderInfo(parkData);
   setFooter(parkData);
+  enableNavigation();
 }
